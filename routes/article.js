@@ -1,4 +1,4 @@
-let express = requiere('express');
+let express = require('express');
 const articleController = require("../controllers/articleController.js");
 var router = express.Router();
 var bodyParser = require('body-parser');
