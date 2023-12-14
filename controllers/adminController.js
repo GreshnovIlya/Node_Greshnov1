@@ -1,4 +1,4 @@
-const Modules = require("../models/adminModel.js");
+const Models = require("../Models/adminModel.js");
 
 exports.getArticleAll = async function(req, res){
     let m = await Models.getAll();
@@ -23,7 +23,7 @@ exports.editArticle = async function(req, res){
 };
 
 exports.deleteArticle = async function(req, res){
-    await Models.delereOne();
+    await Models.deleteOne();
     let m = await Models.getAll();
     res.render('adminArticles',{data:m});
 };
